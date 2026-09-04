@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    background-color: #dbdbdb;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+nav {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: blue;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+hr {
+    margin: 40px 0;
+}
+
+strong {
+    color: green;
+}
+
+.imagem-principal {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 4px solid green;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.75);
+    object-fit: cover;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    gap: 15px;
+}
+
+.container img {
+    width: 500px;
+    height: auto;
+    border: 4px solid green;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.75);
+    object-fit: cover;
+}
+
+.texto_colorido {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(to right, #009c3b, #4ab86b, #ffdf00, 
+    #4a5a99,#002776, #4a5a99, #ffdf00, #4ab86b, #009c3b);
+    background-size: 500% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: mudarCores 15s ease-in-out infinite;
+}
+
+@keyframes mudarCores {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 300% center;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 95%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+}
